@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <small>By: {{ post.author|title }}</small><br/>
     <hr>
+    
+    <img src="{{ post.header_image.url }}" alt="{{ post.title }}" width="400" height="600">
+    <br>
     <br/>
     {{ post.text|safe }}
-    <img src="{{ post.header_image.url }}" alt="{{ post.title }}" width="300" height="400">
+    <!-- <img src="{{ post.header_image.url }}" alt="{{ post.title }}" width="300" height="400"> -->
 
     <br/><br/>
     <a href="{% url 'post' %}" class="btn btn-secondary">Back</a>

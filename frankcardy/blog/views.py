@@ -21,7 +21,8 @@ def post_list(request):
 
 class PostView(ListView):
    model = Post
-   template_name = 'post_list.html'
+   #template_name = 'post_list.html'
+   template_name = 'blog/post_list_test.html'
 
 class PostDetailView(DetailView):
    model = Post
