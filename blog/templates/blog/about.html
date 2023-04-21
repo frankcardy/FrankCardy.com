@@ -4,18 +4,29 @@
 
 {% load static %}
 
-
-
+<body style="zoom: 1;">
+<div class="col-lg-8 mx-auto p-5 py-md-4">
+<main>
 </br>
-<div class="container">
-    <h1>About Me</h1>
-    <p>My name is Frank Cardy and I'm an information security professional from Chicago. I've worked in a variety of roles from Data Analyst to Product Manager and currently work at a Payments/restaurant technology company called SpotOn.</p>
-    <p>I have a dog named Vino. He is a lad</p>
-    <img src="{% static 'IMG_2350.jpeg' %}" alt="A Lad" width="300" height="400">
+<div class="row">
+<div class="fs-5 col-md-8">
+    <h1 style="text-align:center">About Me</h1>
+    <p>My name is Frank Cardy and I'm an IT professional and Cybersecurity student based in Chicago. My background is in information systems and data analytics and I've worked in a variety of roles from Data Analyst to Product Manager. In my free time I enjoy playing with my dog Vino, watching the Chicago Bulls, and training for various road races. I'm currently planning to run the Chicago marathon later this year.</p>
+    <p>Please enjoy this picture of Vino basking in the sun.</p>
+    <img src="/media/images/Chicago.png" alt="Chitown" width="650" height="400">
+    
   </div>
-  
+  <div class="col-md-4"> 
+    <img src="/media/images/headshot.png" alt="A Lad" width="300" height="300" style="padding: 0px 0px 10px 0px">
+    <img src="{% static 'IMG_2350.jpeg' %}" alt="A Lad" width="300" height="400" style="padding: 10px 0px 0px 0px">
+    <p>Vino basking in the sun</p>
+   </div>
+</div>
   <h2 style="text-align:center">Contact me</h2>
   <h2 style="text-align:center">Resume</h2>
   
+</main>
+</div>
+</body>
 
   {% endblock %}
