@@ -165,7 +165,7 @@
     
         <h2>Frank's InfoSec Blog</h2>
 
-<h4>Thinks and thoughts.</h4>
+<h4>CTF writeups & some tinkering</h4>
 
 <p><span class="smalldetails"> <a href="https://github.com/frankcardy" target="_blank" rel="noopener noreferrer">GitHub</a></span></p>
 
@@ -206,7 +206,7 @@
     <h4 class="media-heading"><a href="{% url 'post-detail' post.pk %}">{{ post.title}}</a></h4>
     <p>
       <span class="smalldetails"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.created_date }}</span>
-      <span class="smalldetails"><i class="fa fa-user" aria-hidden="true"></i> <a href=>Frank Cardy</a></span> 
+      <span class="smalldetails"><i class="fa fa-user" aria-hidden="true"></i>Frank Cardy</span> 
     </p>
     
         <div class="media-left">
@@ -215,7 +215,7 @@
     
     <div class="media-body">
       <p>{{ post.text| safe | linebreaksbr | slice:":150:" }}...</p>
-      <p class="readon"><a href=>READ ON</a></p>
+      
     </div>
     
     <hr>
