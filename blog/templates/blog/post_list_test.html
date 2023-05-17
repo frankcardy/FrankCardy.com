@@ -206,7 +206,7 @@
     <h4 class="media-heading"><a href="{% url 'post-detail' post.pk %}">{{ post.title}}</a></h4>
     <p>
       <span class="smalldetails"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.created_date }}</span>
-      <span class="smalldetails"><i class="fa fa-user" aria-hidden="true"></i>Frank Cardy</span> 
+      <span class="smalldetails"><i class="fa fa-user" aria-hidden="true"></i> <a href=>Frank Cardy</a></span> 
     </p>
     
         <div class="media-left">
@@ -215,7 +215,7 @@
     
     <div class="media-body">
       <p>{{ post.text| safe | linebreaksbr | slice:":150:" }}...</p>
-      
+      <p class="readon"><a href="{% url 'post-detail' post.pk %}">Read On</a></p>
     </div>
     
     <hr>
